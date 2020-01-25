@@ -1,14 +1,14 @@
 import React from "react";
-import { BrowserRouter, Route } from "react-router-dom";
+import { Route } from "react-router-dom";
 import SignIn from "./auth/SignIn";
+import SignUp from "./auth/SignUp";
 import "./App.scss";
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-        <Route path="/login" component={SignIn} />
-      </BrowserRouter>
+      <Route path="/login" component={SignIn} />
+      <Route path="/register" component={SignUp} />
     </div>
   );
 }
