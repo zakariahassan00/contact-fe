@@ -10,9 +10,18 @@ const SideMenu = () => {
       </div>
       <div className="sidemenu__elements">
         <ul>
-          <li>Profile</li>
-          <li>Messages</li>
-          <li>News</li>
+          <li>
+            <FontAwesomeIcon icon="user" />
+            Profile
+          </li>
+          <li>
+            <FontAwesomeIcon icon="envelope" />
+            Messages
+          </li>
+          <li>
+            <FontAwesomeIcon icon="bullhorn" />
+            News
+          </li>
         </ul>
       </div>
     </div>
