@@ -4,4 +4,25 @@
   background-color: $color-white;
   width: 100%;
   height: 100vh;
+  display: grid;
+  grid-template-columns: $side-menu-width auto;
+
+  &__sidemenu {
+    height: 100%;
+  }
+
+  &__main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__header {
+    width: 100%;
+    height: $header-height;
+  }
+
+  &__content {
+    width: 100%;
+    height: calc(100% - #{$header-height});
+  }
 }
