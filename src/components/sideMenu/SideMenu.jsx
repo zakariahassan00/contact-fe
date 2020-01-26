@@ -1,5 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Button from "./../button/Button";
 import "./sideMenu.scss";
 
 const SideMenu = () => {
@@ -9,7 +10,7 @@ const SideMenu = () => {
         <h1>Contact</h1>
       </div>
       <div className="sidemenu__elements">
-        <ul>
+        <ul className="sidemenu__list">
           <li className="sidemenu__list-item">
             <span>
               <FontAwesomeIcon className="sidemenu__icon" icon="user" />
@@ -28,7 +29,19 @@ const SideMenu = () => {
             </span>
             News
           </li>
+          <li className="sidemenu__list-item">
+            <span>
+              <FontAwesomeIcon className="sidemenu__icon" icon="video" />
+            </span>
+            Channels
+          </li>
         </ul>
+        <div className="sidemenu__channel">
+          <p>Create Channel To Enjoy Group Chatting with Your Friends!</p>
+          <Button color="success" type="rounded">
+            Create now!
+          </Button>
+        </div>
       </div>
     </div>
   );

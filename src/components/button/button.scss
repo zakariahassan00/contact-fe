@@ -1,7 +1,7 @@
 @import "../../assests/scss/variables";
 
 .button {
-  width: 100px;
+  min-width: 100px;
   height: 40px;
   margin: 5px auto;
   cursor: pointer;
@@ -22,5 +22,18 @@
     &:hover {
       background-color: $color-primary-dark;
     }
+  }
+
+  &--success {
+    color: $color-white;
+    background-color: $color-success;
+
+    &:hover {
+      background-color: $color-success-dark;
+    }
+  }
+
+  &--rounded {
+    border-radius: 50px;
   }
 }

@@ -4,14 +4,15 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faUser,
   faEnvelope,
-  faBullhorn
+  faBullhorn,
+  faVideo
 } from "@fortawesome/free-solid-svg-icons";
 import SignIn from "./auth/SignIn";
 import SignUp from "./auth/SignUp";
 import Dashboard from "./dashboard/Dashboard";
 import "./App.scss";
 
-library.add(faUser, faEnvelope, faBullhorn);
+library.add(faUser, faEnvelope, faBullhorn, faVideo);
 
 function App() {
   return (

@@ -43,4 +43,15 @@
     margin-right: 10px;
     color: $icon;
   }
+
+  &__channel {
+    height: 160px;
+    padding: 15px 10px;
+    text-align: center;
+    margin: 30px auto 10px;
+    background-color: $color-tertiary-dark;
+    p {
+      margin-bottom: 10px;
+    }
+  }
 }
