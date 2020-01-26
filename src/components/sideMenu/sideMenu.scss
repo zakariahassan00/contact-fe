@@ -1,0 +1,23 @@
+@import "../../assests/scss/variables";
+
+.sidemenu {
+  width: 100%;
+  height: 100%;
+  background-color: $color-tertiary-light;
+  color: $color-white;
+
+  &__brand {
+    height: $header-height;
+    background-color: $color-tertiary-dark;
+    padding: 5px;
+    text-align: center;
+    h1 {
+      letter-spacing: 5px;
+      font-weight: 700;
+    }
+  }
+
+  &__elements {
+    padding: 50px 15px 10px;
+  }
+}
