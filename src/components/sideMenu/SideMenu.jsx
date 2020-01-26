@@ -10,16 +10,22 @@ const SideMenu = () => {
       </div>
       <div className="sidemenu__elements">
         <ul>
-          <li>
-            <FontAwesomeIcon icon="user" />
+          <li className="sidemenu__list-item">
+            <span>
+              <FontAwesomeIcon className="sidemenu__icon" icon="user" />
+            </span>
             Profile
           </li>
-          <li>
-            <FontAwesomeIcon icon="envelope" />
+          <li className="sidemenu__list-item">
+            <span>
+              <FontAwesomeIcon className="sidemenu__icon" icon="envelope" />
+            </span>
             Messages
           </li>
-          <li>
-            <FontAwesomeIcon icon="bullhorn" />
+          <li className="sidemenu__list-item">
+            <span>
+              <FontAwesomeIcon className="sidemenu__icon" icon="bullhorn" />
+            </span>
             News
           </li>
         </ul>
