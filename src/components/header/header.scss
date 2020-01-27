@@ -12,20 +12,25 @@
     text-align: center;
   }
 
-  &__search {
-    align-self: center;
-    margin: 0 10px;
-  }
-
   &__user {
     width: 50%;
     display: flex;
     justify-content: flex-end;
   }
 
+  &__search {
+    align-self: center;
+    margin: 0 10px;
+  }
+
   &__notifications {
     align-self: center;
-    width: 50px;
+    width: 30px;
+    margin: 0 20px;
+  }
+
+  &__avatar {
+    align-self: center;
     margin: 0 20px;
   }
 }

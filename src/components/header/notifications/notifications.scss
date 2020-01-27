@@ -3,4 +3,7 @@
 .notifications {
   font-size: 20px;
   color: $icon;
+  &__icon {
+    cursor: pointer;
+  }
 }

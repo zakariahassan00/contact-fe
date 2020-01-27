@@ -5,7 +5,7 @@ import "./notifications.scss";
 const Notifications = () => {
   return (
     <div className="notifications">
-      <FontAwesomeIcon icon="bell" />
+      <FontAwesomeIcon icon="bell" className="notifications__icon" />
     </div>
   );
 };
