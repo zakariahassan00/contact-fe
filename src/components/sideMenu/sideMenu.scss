@@ -33,6 +33,11 @@
       text-align: center;
     }
 
+    &--selected {
+      border-left: 5px solid $color-danger;
+      background-color: $color-tertiary-dark;
+    }
+
     &:hover {
       border-left: 5px solid $color-danger;
       background-color: $color-tertiary-dark;
