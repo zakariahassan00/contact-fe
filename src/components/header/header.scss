@@ -1,0 +1,31 @@
+@import "../../assests/scss/variables";
+
+.header {
+  height: $header-height;
+  background-color: #ebeff2;
+  padding: 10px;
+  display: flex;
+
+  &__current-page {
+    width: 50%;
+    height: 100%;
+    text-align: center;
+  }
+
+  &__search {
+    align-self: center;
+    margin: 0 10px;
+  }
+
+  &__user {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__notifications {
+    align-self: center;
+    width: 50px;
+    margin: 0 20px;
+  }
+}
