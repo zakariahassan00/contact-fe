@@ -1,13 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import onClickOutside from "react-onclickoutside";
+import Popup from "./popup/Popup";
 import "./notifications.scss";
 
-const Notifications = () => {
+function Notifications() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  Notifications.handleClickOutside = () => setIsOpen(false);
+
   return (
     <div className="notifications">
-      <FontAwesomeIcon icon="bell" className="notifications__icon" />
+      <div className="notifications__icon" onClick={() => setIsOpen(!isOpen)}>
+        <FontAwesomeIcon icon="bell" className="notifications__icon" />
+      </div>
+
+      <Popup isOpen={isOpen} setIsOpen={setIsOpen} />
     </div>
   );
+}
+
+const clickOutsideConfig = {
+  handleClickOutside: () => Notifications.handleClickOutside
 };
 
-export default Notifications;
+export default onClickOutside(Notifications, clickOutsideConfig);

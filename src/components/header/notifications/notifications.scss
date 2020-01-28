@@ -1,9 +1,33 @@
 @import "../../../assests/scss/variables";
 
 .notifications {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  display: flex;
   font-size: 20px;
+  justify-content: center;
   color: $icon;
+  transition: all 0.3s;
+  cursor: pointer;
+
   &__icon {
-    cursor: pointer;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+
+    svg {
+      background-color: transparent;
+    }
+  }
+
+  &__icon:active {
+    background-color: rgba($icon, 0.5);
+    svg {
+      background-color: transparent;
+    }
   }
 }
