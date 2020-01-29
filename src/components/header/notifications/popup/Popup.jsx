@@ -1,5 +1,5 @@
 import React from "react";
-import { testEvents } from "../testEvents";
+import { user } from "../../userTest";
 import "./popup.scss";
 
 const Popup = ({ isOpen, setIsOpen }) => {
@@ -12,7 +12,7 @@ const Popup = ({ isOpen, setIsOpen }) => {
           </div>
 
           <ul className="popup__elements">
-            {testEvents.map(event => (
+            {user.newEvents.map(event => (
               <li className="popup__element" onClick={() => setIsOpen(false)}>
                 {event.event}
               </li>

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import onClickOutside from "react-onclickoutside";
 import Popup from "./popup/Popup";
-import { testEvents } from "./testEvents";
+import { user } from "../userTest";
 import "./notifications.scss";
 
 function Notifications() {
@@ -14,8 +14,8 @@ function Notifications() {
       <div className="notifications__icon" onClick={() => setIsOpen(!isOpen)}>
         <FontAwesomeIcon icon="bell" className="notifications__icon" />
 
-        {testEvents.length > 0 && (
-          <div className="notifications__badge">{testEvents.length}</div>
+        {user.newEvents.length > 0 && (
+          <div className="notifications__badge">{user.newEvents.length}</div>
         )}
       </div>
 
