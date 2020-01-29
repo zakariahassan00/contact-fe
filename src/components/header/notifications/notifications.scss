@@ -1,0 +1,48 @@
+@import "../../../assests/scss/variables";
+
+.notifications {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  display: flex;
+  font-size: 24px;
+  justify-content: center;
+  color: $icon;
+  transition: all 0.3s;
+  cursor: pointer;
+
+  &__icon {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+
+    svg {
+      background-color: transparent;
+    }
+  }
+
+  &__icon:active {
+    background-color: rgba($color-light-grey-1, 0.5);
+    svg {
+      background-color: transparent;
+    }
+  }
+
+  &__badge {
+    min-width: 18px;
+    min-height: 18px;
+    background-color: $color-danger;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    right: 4px;
+    color: $color-white;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    padding: 2px;
+  }
+}

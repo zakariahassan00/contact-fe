@@ -5,14 +5,29 @@ import {
   faUser,
   faEnvelope,
   faBullhorn,
-  faVideo
+  faVideo,
+  faSearch,
+  faBell,
+  faUserCircle,
+  faSignOutAlt,
+  faCog
 } from "@fortawesome/free-solid-svg-icons";
 import SignIn from "./auth/SignIn";
 import SignUp from "./auth/SignUp";
 import Dashboard from "./dashboard/Dashboard";
 import "./App.scss";
 
-library.add(faUser, faEnvelope, faBullhorn, faVideo);
+library.add(
+  faUser,
+  faEnvelope,
+  faBullhorn,
+  faVideo,
+  faSearch,
+  faBell,
+  faUserCircle,
+  faSignOutAlt,
+  faCog
+);
 
 function App() {
   return (

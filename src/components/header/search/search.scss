@@ -1,0 +1,22 @@
+@import "../../../assests/scss/variables";
+
+.search {
+  background-color: $color-white;
+  padding: 5px 10px;
+  border-radius: 50px;
+  color: $icon;
+
+  &__input {
+    width: 150px;
+    height: 20px;
+    transition: all 0.4s;
+    border: none;
+    outline: none;
+    padding-left: 15px;
+    font-size: 14px;
+
+    &:focus {
+      width: 250px;
+    }
+  }
+}
