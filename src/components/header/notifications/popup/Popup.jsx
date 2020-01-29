@@ -1,18 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
+import { testEvents } from "../testEvents";
 import "./popup.scss";
-
-const testEvents = [
-  { event: "Your Frined Ahmed has sent you a Friend Request" },
-  { event: "Your Frined Mohamed has sent you a Friend Request" },
-  { event: "Your Frined Khaled has sent you a Friend Request" },
-  { event: "Your Frined Saad has sent you a Friend Request" },
-  { event: "Your Frined Ehab has sent you a Friend Request" },
-  { event: "Your Frined Ragb has sent you a Friend Request" },
-  { event: "Your Frined Omar has sent you a Friend Request" },
-  { event: "Your Frined Abdo has sent you a Friend Request" },
-  { event: "Your Frined Abdo has sent you a Friend Request" },
-  { event: "Your Frined Abdo has sent you a Friend Request" }
-];
 
 const Popup = ({ isOpen, setIsOpen }) => {
   return (
