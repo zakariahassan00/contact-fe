@@ -23,8 +23,8 @@ const Profile = () => {
         </div>
         <div className="profile__summary">{user.summary}</div>
         <div className="profile__connect">
-          <Button color="primary">Connect</Button>
-          <Button color="primary">Follow</Button>
+          <Button>Connect</Button>
+          <Button>Follow</Button>
         </div>
       </div>
     </div>
