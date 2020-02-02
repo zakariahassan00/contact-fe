@@ -2,6 +2,7 @@ import React from "react";
 import "./dashboard.scss";
 import SideMenu from "../sideMenu/SideMenu";
 import Header from "./../header/Header";
+import Profile from "./../profile/Profile";
 
 const Dashboard = () => {
   return (
@@ -13,8 +14,9 @@ const Dashboard = () => {
         <div className="dashboard__header">
           <Header />
         </div>
-        <div className="dashboard__content"></div>
-        {/* main */}
+        <div className="dashboard__content">
+          <Profile />
+        </div>
       </div>
     </div>
   );
