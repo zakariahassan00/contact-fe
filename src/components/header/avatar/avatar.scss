@@ -23,6 +23,7 @@
     background-color: $color-white;
     box-shadow: 0px 5px 15px rgba($color-light-grey, 0.5);
     position: absolute;
+    z-index: 99999;
     top: 53px;
     right: -20px;
     animation: slideDown 0.3s;
