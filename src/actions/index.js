@@ -27,14 +27,14 @@ export const register = credentials => async dispatch => {
   try {
     const res = await axios.post(`${ENDPOINT}/api/users/signUp`, credentials);
 
-    // localStorage.setItem('token', res.headers('x-outh-token'))
+    localStorage.setItem("token", res.headers("x-outh-token"));
     dispatch({
-      action: USER_REGISTER,
+      type: USER_REGISTER,
       payload: res.data
     });
   } catch (e) {
     dispatch({
-      action: USER_REGISTER_ERROR,
+      type: USER_REGISTER_ERROR,
       payload: "Incorrect Email or Password"
     });
   }
