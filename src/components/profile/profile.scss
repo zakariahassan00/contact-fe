@@ -2,9 +2,9 @@
 @import "../../assests/scss/animations";
 
 .profile {
-  max-width: 60%;
+  max-width: 90%;
   animation: slideToLeft 0.5s;
-  box-shadow: 0 10px 40px rgba($color-light-grey, 1);
+  // box-shadow: 0 10px 40px rgba($color-light-grey, 1);
   margin: 20px auto;
   position: relative;
   overflow: hidden;
@@ -23,12 +23,12 @@
 
   &__main {
     padding: 10px 50px;
-    max-height: 300px;
+    min-height: 400px;
     background-color: $color-white;
 
     &--inner {
       position: relative;
-      top: -140px;
+      // top: -140px;
       // back
     }
     :not(:last-child) {
