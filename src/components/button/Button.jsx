@@ -1,7 +1,7 @@
 import React, { Children } from "react";
 import "./button.scss";
 
-const Button = ({ size, color, type, onClick, children }) => {
+const Button = ({ size, color = "default", type, onClick, children }) => {
   return (
     <button
       onClick={onClick}

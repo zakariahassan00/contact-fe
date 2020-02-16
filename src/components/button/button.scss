@@ -33,6 +33,15 @@
     }
   }
 
+  &--default {
+    color: $color-white;
+    background-color: $color-secondary-light;
+
+    &:hover {
+      background-color: $color-secondary-dark;
+    }
+  }
+
   &--rounded {
     border-radius: 50px;
   }

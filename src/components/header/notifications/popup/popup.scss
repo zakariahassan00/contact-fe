@@ -8,6 +8,7 @@
   left: -($popup-width + 10px);
   padding-top: 20px;
   position: absolute;
+  z-index: 99999;
   background-color: $color-white;
   border: 1px solid #eee;
   border-radius: 4px;

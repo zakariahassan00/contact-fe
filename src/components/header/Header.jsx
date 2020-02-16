@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <div className="header">
       <div className="header__current-page">
-        <h2>Messages</h2>
+        <h2>Profile</h2>
       </div>
       <div className="header__user">
         <div className="header__search">
