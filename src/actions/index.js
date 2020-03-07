@@ -1,6 +1,6 @@
 import axios from "axios";
 const token = localStorage.getItem("token");
-const ENDPOINT = "https://pacific-shelf-55565.herokuapp.com";
+const ENDPOINT = "https://serene-ridge-26896.herokuapp.com";
 
 const user = {
   name: "Mark Zuckerberg",
@@ -47,12 +47,12 @@ export const login = credentials => async dispatch => {
 
     localStorage.setItem("token", res.headers("x-outh-token"));
     dispatch({
-      action: GET_USER,
+      type: GET_USER,
       payload: res.data
     });
   } catch (e) {
     dispatch({
-      action: GET_USER_ERROR,
+      type: GET_USER_ERROR,
       payload: "Incorrect Email or Password"
     });
   }
@@ -66,20 +66,13 @@ export const register = credentials => async dispatch => {
 
     localStorage.setItem("token", res.headers("x-outh-token"));
     dispatch({
-<<<<<<< HEAD
-      type: USER_REGISTER,
-=======
-      action: GET_USER,
->>>>>>> profile
+      type: GET_USER,
       payload: res.data
     });
   } catch (e) {
+    console.log(e);
     dispatch({
-<<<<<<< HEAD
-      type: USER_REGISTER_ERROR,
-=======
-      action: GET_USER_ERROR,
->>>>>>> profile
+      type: GET_USER_ERROR,
       payload: "Incorrect Email or Password"
     });
   }
