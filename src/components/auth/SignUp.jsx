@@ -10,8 +10,11 @@ import CustomInput from "./CustomInput";
 // import CustomSelect from "./CustomSelect";
 import "./auth.scss";
 
-const Signup = ({ handleSubmit, register }) => {
-  const onSubmit = values => register(values);
+const Signup = ({ handleSubmit, register, history }) => {
+  const onSubmit = values =>
+    register(values, () => {
+      history.push("/main");
+    });
 
   return (
     <div className="authbox">

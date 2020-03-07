@@ -60,15 +60,17 @@ export const login = credentials => async dispatch => {
 
 // export const USER_REGISTER = "user_register";
 // export const USER_REGISTER_ERROR = "user_register_error";
-export const register = credentials => async dispatch => {
+export const register = (credentials, redirect) => async dispatch => {
   try {
     const res = await axios.post(`${ENDPOINT}/api/users/signUp`, credentials);
 
-    localStorage.setItem("token", res.headers("x-outh-token"));
     dispatch({
       type: GET_USER,
       payload: res.data
     });
+
+    localStorage.setItem("token", res.headers["x-auth-token"]);
+    redirect();
   } catch (e) {
     console.log(e);
     dispatch({

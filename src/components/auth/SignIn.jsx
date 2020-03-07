@@ -6,8 +6,11 @@ import { Field, reduxForm } from "redux-form";
 import Button from "../button/Button";
 import "./auth.scss";
 
-const SignIn = ({ handleSubmit, login }) => {
-  const onSubmit = values => login(values);
+const SignIn = ({ handleSubmit, login, history }) => {
+  const onSubmit = values =>
+    login(values, () => {
+      history.push("/main");
+    });
 
   return (
     <div className="authbox">
