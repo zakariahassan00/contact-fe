@@ -100,4 +100,8 @@
       }
     }
   }
+
+  &__error {
+    color: $color-danger;
+  }
 }

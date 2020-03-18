@@ -42,9 +42,42 @@
     margin: 10px auto;
     border-radius: 50%;
     overflow: hidden;
+    position: relative;
 
     img {
       width: 150px;
+    }
+
+    &--blank {
+      width: 100%;
+      height: 100%;
+      background-color: $color-light-grey;
+      position: relative;
+
+      h1 {
+        margin: auto;
+        font-size: 54px;
+        padding: 40px;
+      }
+    }
+
+    &--changePic {
+      display: none;
+      position: absolute;
+      bottom: 0px;
+      height: 30px;
+      width: 100%;
+      color: $color-white;
+      background-color: rgba($color: #000000, $alpha: 0.4);
+      cursor: pointer;
+
+      input {
+        display: none;
+      }
+    }
+
+    &:hover &--changePic {
+      display: block;
     }
   }
 
