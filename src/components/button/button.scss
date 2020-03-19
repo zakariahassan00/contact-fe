@@ -33,6 +33,15 @@
     }
   }
 
+  &--danger {
+    color: $color-white;
+    background-color: $color-danger;
+
+    &:hover {
+      background-color: $color-danger-dark;
+    }
+  }
+
   &--default {
     color: $color-white;
     background-color: $color-secondary-light;

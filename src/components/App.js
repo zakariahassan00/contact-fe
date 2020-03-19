@@ -1,5 +1,5 @@
 import React from "react";
-import { Route } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faUser,
@@ -16,6 +16,7 @@ import SignIn from "./auth/SignIn";
 import SignUp from "./auth/SignUp";
 import Dashboard from "./dashboard/Dashboard";
 import "./App.scss";
+import LandingPage from "./landingPage/LandingPage";
 
 library.add(
   faUser,
@@ -32,9 +33,12 @@ library.add(
 function App() {
   return (
     <div className="App">
-      <Route path="/login" component={SignIn} />
-      <Route path="/register" component={SignUp} />
-      <Route path="/main" component={Dashboard} />
+      <Switch>
+        <Route path="/login" component={SignIn} />
+        <Route path="/register" component={SignUp} />
+        <Route path="/main" component={Dashboard} />
+        <Route exact path="/" component={LandingPage} />
+      </Switch>
     </div>
   );
 }
