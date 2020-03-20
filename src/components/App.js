@@ -17,6 +17,7 @@ import SignUp from "./auth/SignUp";
 import Dashboard from "./dashboard/Dashboard";
 import "./App.scss";
 import LandingPage from "./landingPage/LandingPage";
+import NotFound from "./common/NotFound";
 
 library.add(
   faUser,
@@ -38,6 +39,7 @@ function App() {
         <Route path="/register" component={SignUp} />
         <Route path="/main" component={Dashboard} />
         <Route exact path="/" component={LandingPage} />
+        <Route path="/" component={NotFound} />
       </Switch>
     </div>
   );
