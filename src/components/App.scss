@@ -17,11 +17,7 @@ a {
 
 .App {
   width: 100%;
-<<<<<<< HEAD
-  min-height: 90vh;
-=======
-  min-height: 100vh;
->>>>>>> login
+  overflow: hidden;
   background-color: $color-secondary-dark;
   // font-family: "Titillium Web", sans-serif;
   font-family: "Source Sans Pro", sans-serif;
