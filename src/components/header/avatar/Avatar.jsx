@@ -4,6 +4,7 @@ import onClickOutside from "react-onclickoutside";
 import { user } from "../userTest";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./avatar.scss";
+import { signOut } from "./../../../actions/index";
 
 const RenderListItem = ({ name, icon, link, onClick }) => {
   return (
@@ -53,6 +54,7 @@ function Avatar() {
                 link="/main/settings"
               />
               <RenderListItem
+                onClick={() => signOut()}
                 name="Logout"
                 icon="sign-out-alt"
                 link="/main/logout"
