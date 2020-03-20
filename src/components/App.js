@@ -16,6 +16,7 @@ import SignIn from "./auth/SignIn";
 import SignUp from "./auth/SignUp";
 import Dashboard from "./dashboard/Dashboard";
 import "./App.scss";
+import NotFound from "./common/NotFound";
 
 library.add(
   faUser,
@@ -35,6 +36,7 @@ function App() {
       <Route path="/login" component={SignIn} />
       <Route path="/register" component={SignUp} />
       <Route path="/main" component={Dashboard} />
+      <Route path="/" component={NotFound} />
     </div>
   );
 }
