@@ -1,6 +1,6 @@
 import axios from "axios";
 let token = localStorage.getItem("token");
-const ENDPOINT = "https://serene-ridge-26896.herokuapp.com";
+const ENDPOINT = "https://vast-tundra-44131.herokuapp.com";
 
 export const GET_USER = "get_user";
 export const GET_USER_ERROR = "get_user_error";
@@ -19,7 +19,7 @@ export const getUser = () => async dispatch => {
 
 export const login = (credentials, redirect) => async dispatch => {
   try {
-    const res = await axios.post(`${ENDPOINT}/api/auth/logIn`, credentials);
+    const res = await axios.post(`${ENDPOINT}/api/user/logIn`, credentials);
 
     dispatch({
       type: GET_USER,
@@ -39,7 +39,7 @@ export const login = (credentials, redirect) => async dispatch => {
 
 export const register = (credentials, redirect) => async dispatch => {
   try {
-    const res = await axios.post(`${ENDPOINT}/api/users/signUp`, credentials);
+    const res = await axios.post(`${ENDPOINT}/api/user/SignUp`, credentials);
 
     dispatch({
       type: GET_USER,
@@ -88,14 +88,3 @@ export const searchPeople = query => async dispatch => {
     dispatch({ type: GET_PEOPLE, payload: null });
   }
 };
-
-// export const GET_FRIENDS = "get_friends";
-// export const searchFriends = query => async dispatch => {
-//   try {
-//     const res = await axios.get(`${ENDPOINT}/api/friends?query=${query}`);
-
-//     dispatch({ action: GET_FRIENDS, payload: res.data });
-//   } catch (e) {
-//     dispatch({ action: GET_FRIENDS, payload: null });
-//   }
-// };
